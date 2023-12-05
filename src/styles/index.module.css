@@ -1,0 +1,38 @@
+.homeContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+}
+
+.worldClockContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.countdownTimersContainer {
+    margin-top: 20px;
+}
+
+.addTimerButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 182px;
+}
+
+    .addTimerButton:hover {
+        background-color: #2980b9;
+    }

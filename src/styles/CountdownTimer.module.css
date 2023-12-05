@@ -1,0 +1,119 @@
+.countdownTimerContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.deleteButton {
+    float: right;
+    background-color: #3498db; 
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+    .deleteButton:hover {
+        background-color: #2980b9; 
+    }
+
+
+.timerInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .timerInputs label {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .timerInputs input {
+        width: 50px;
+        padding: 5px;
+    }
+
+
+.timerControls {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 120px;
+}
+
+    .timerControls button {
+        margin-right: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #3498db; 
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .timerControls button:disabled {
+            cursor: not-allowed;
+            background-color: #bdc3c7; 
+            color: #7f8c8d;
+        }
+
+        .timerControls button.start:disabled,
+        .timerControls button.stop:disabled {
+            background-color: #7f8c8d;
+        }
+
+        .timerControls button.start {
+            background-color: #2980b9; 
+        }
+
+        .timerControls button.stop {
+            background-color: #e74c3c; 
+        }
+
+        .timerControls button.reset {
+            background-color: #3498db; 
+        }
+
+        .timerControls button:hover:enabled {
+            background-color: #2575a9; 
+        }
+
+
+.timeLeft {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.timerValues {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.timerValue {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+    .timerValue:last-child {
+        margin-right: 0;
+    }
+.timerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .timerHeader h2 {
+        margin: 0;
+    }
