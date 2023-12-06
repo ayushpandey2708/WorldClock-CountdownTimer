@@ -1,15 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from '../styles/CountdownTimer.module.css';
 
-interface Timer {
+
+interface CountdownTimerProps  {
     id: number;
     days: number;
     hours: number;
     minutes: number;
     seconds: number;
-}
-
-interface CountdownTimerProps extends Timer {
     onDelete: () => void;
 }
 
@@ -76,11 +74,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
         }
     };
 
-    useEffect(() => {
-        return () => {
-            stopTimer(); 
-        };
-    }, []);
+   
 
     const formatTime = (time: number) => {
         const daysLeft = Math.floor(time / (24 * 3600));
