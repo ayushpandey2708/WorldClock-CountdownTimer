@@ -3,8 +3,8 @@ import { logTimerAction, fetchLogEntriesFromMongoDB } from '../../server/utils/l
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        const { action, timerId } = req.body;
-        await logTimerAction(action, timerId);
+        const { action} = req.body;
+        await logTimerAction(action);
         res.status(200).json({ message: 'Action logged successfully' });
     } else if (req.method === 'GET') {
         const entries = await fetchLogEntriesFromMongoDB();

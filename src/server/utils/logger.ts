@@ -1,6 +1,6 @@
 import { connectToMongoDB, logsCollection } from '../db/mongo';
 
-const logTimerAction = async (action: string, timerId?: number) => {
+const logTimerAction = async (action: string) => {
     if (!logsCollection) {
         await connectToMongoDB();
     }
