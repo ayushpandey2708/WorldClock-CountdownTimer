@@ -25,7 +25,6 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
     const [inputSeconds, setInputSeconds] = useState(seconds);
     const [timeLeft, setTimeLeft] = useState(days * 24 * 3600 + hours * 3600 + minutes * 60 + seconds);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    console.log("Rendering Count Down Timer");
     const [isRunning, setIsRunning] = useState(false);
 
     const startTimer = () => {
