@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from '../styles/CountdownTimer.module.css';
 
+console.log("diei");
 
 interface CountdownTimerProps  {
     id: number;
